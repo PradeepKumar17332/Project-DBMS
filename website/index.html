@@ -11,8 +11,10 @@ p{
   float: left;
 }
 .cot{
-	float:left;
-	margin-left: 200px;
+	position: relative;
+	z-index: 10;
+	
+	text-align:center;
 }
 .image {
   display: block
@@ -24,33 +26,59 @@ p{
   width: 100%;
   text-align: center; //assuming centered captions
 }
+
+.headerimg{
+	background: url(/home/pradeep/Documents/miniproject/img/header.png);
+	height: 450px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.footerimg{
+	background: url(/home/pradeep/Documents/miniproject/img/footer.png);
+	height: 150px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+#cont{
+	position: absolute;
+}
 </style>
 </head>
 <body bgcolor='black'>
-<div><img src='/home/pradeep/Documents/miniproject/img/logo.png' style="width:325px;height:125px;padding-bottom: 75px"></div>
-	<div>
-		<ul>
+	<div class="headerimg">
+		<img src='/home/pradeep/Documents/miniproject/img/logo.jpg' style="margin-left: 50px; width:275px;height:125px;padding-bottom: 75px">
+	</div>
+	<div id="cont" style="padding-top: 50px;padding-bottom: 100px;position: relative;">
+		<ul >
   	<li class="container">
-		<img class="image" src='/home/pradeep/Documents/miniproject/img/patties.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-		<span class="caption">ITEMS</span>
+		<img class="image" src='/home/pradeep/Documents/miniproject/img/patties.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px;margin-left: 50px;">
+		<span class="caption" style="font-family:courier;">ITEMS</span>
 	</li>
 	<li class="container">
 		<img  class="image" src='/home/pradeep/Documents/miniproject/img/cart.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-		<span class="caption">CART</span>
+		<span class="caption" style="font-family:courier;">CART</span>
 	</li>
 	<li class="container">
 		<img class="image" src='/home/pradeep/Documents/miniproject/img/wallet.jpeg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-		<span class="caption">WALLET</span>
+		<span class="caption" style="font-family:courier;">WALLET</span>
 	</li>
 	<li class="container">
 		<img  class="image" src='/home/pradeep/Documents/miniproject/img/order-history.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-		<span class="caption">ORDER-HISTORY</span>
+		<span class="caption" style="font-family:courier;">ORDER-HISTORY</span>
 
 	</li>
 	</ul>
 	</div>
-	<div class="cot" >
-	<p>IN A HURRY? PICK UP A BITE FROM OUR GRAB & GO COUNTER, OPEN WEEKDAYS FROM 8AM!</p>
+
+	<div class="cot" style="padding-top: 80px;padding-bottom: 70px;">
+	
+	<p style="font-family:courier;font-size:125%;text-align:center;color:yellow;padding-top: 200px;">IN A HURRY? PICK UP A BITE FROM OUR GRAB & GO COUNTER, OPEN WEEKDAYS FROM 11PM!</p>
 	</div>
+
+	<footer class="footerimg" style="background-color: #6FDB29; position: relative; height: 75px; padding: 0px; left: 0px; right: 0px; text-align: center; bottom: 0px;">
+  	<p><a href="##">CONTACT US</a></p>
+  	<p><a href="mailto:pk1999pankaj@gmail.com">
+  	FEEDBACK</a></p>
+	</footer>
 </body>
 </html>
