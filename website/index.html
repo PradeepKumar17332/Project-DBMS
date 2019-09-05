@@ -1,84 +1,103 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Night Canteen</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-p{
-	color: white;
-}
-.container {
-  float: left;
-}
-.cot{
-	position: relative;
-	z-index: 10;
-	
-	text-align:center;
-}
-.image {
-  display: block
-}
+	<title>Night Canteen</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style>
+		p{
+			color: white;
+		}
+		.container {
+			float: left;
+		}
+		.cot{
+			position: relative;
+			z-index: 10;
+			
+			text-align:center;
+		}
+		.image {
+			display: block
+		}
 
-.caption {
-  display: block;
-  color: white;
-  width: 100%;
-  text-align: center; //assuming centered captions
-}
+		.caption {
+			display: block;
+			color: white;
+			width: 100%;
+			text-align: center; //assuming centered captions
+		}
 
-.headerimg{
-	background: url(/home/pradeep/Documents/miniproject/img/header.png);
-	height: 450px;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-.footerimg{
-	background: url(/home/pradeep/Documents/miniproject/img/footer.png);
-	height: 150px;
-	background-size: cover;
-	background-repeat: no-repeat;
-}
-#cont{
-	position: absolute;
-}
-</style>
+		.headerimg{
+			background: url(/home/pradeep/Documents/miniproject/img/header.png);
+			height: 450px;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		.footerimg{
+			background: url(/home/pradeep/Documents/miniproject/img/footer.png);
+			background-color: black;
+			height: 150px;
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+		#cont{
+			position: absolute;
+		}
+		.ulaa{
+			text-align: left;
+			width: 80%;
+			position:relative;
+			left: 10%;
+		}
+
+	</style>
 </head>
 <body bgcolor='black'>
 	<div class="headerimg">
 		<img src='/home/pradeep/Documents/miniproject/img/logo.jpg' style="margin-left: 50px; width:275px;height:125px;padding-bottom: 75px">
 	</div>
 	<div id="cont" style="padding-top: 50px;padding-bottom: 100px;position: relative;">
-		<ul >
-  	<li class="container">
-		<img class="image" src='/home/pradeep/Documents/miniproject/img/patties.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px;margin-left: 50px;">
-		<span class="caption" style="font-family:courier;">ITEMS</span>
-	</li>
-	<li class="container">
-		<img  class="image" src='/home/pradeep/Documents/miniproject/img/cart.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-		<span class="caption" style="font-family:courier;">CART</span>
-	</li>
-	<li class="container">
-		<img class="image" src='/home/pradeep/Documents/miniproject/img/wallet.jpeg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-		<span class="caption" style="font-family:courier;">WALLET</span>
-	</li>
-	<li class="container">
-		<img  class="image" src='/home/pradeep/Documents/miniproject/img/order-history.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-		<span class="caption" style="font-family:courier;">ORDER-HISTORY</span>
+		<ul style="list-style-type: none;">
+			<li class="container">
+				<img class="image" src='/home/pradeep/Documents/miniproject/img/patties.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px;margin-left: 50px;">
+				<span class="caption" style="font-family:courier;">ITEMS</span>
+			</li>
+			<li class="container">
+				<img  class="image" src='/home/pradeep/Documents/miniproject/img/cart.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
+				<span class="caption" style="font-family:courier;">CART</span>
+			</li>
+			<li class="container">
+				<img class="image" src='/home/pradeep/Documents/miniproject/img/wallet.jpeg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
+				<span class="caption" style="font-family:courier;">WALLET</span>
+			</li>
+			<li class="container">
+				<img  class="image" src='/home/pradeep/Documents/miniproject/img/order-history.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
+				<span class="caption" style="font-family:courier;">ORDER-HISTORY</span>
 
-	</li>
-	</ul>
+			</li>
+		</ul>
 	</div>
 
 	<div class="cot" style="padding-top: 80px;padding-bottom: 70px;">
-	
-	<p style="font-family:courier;font-size:125%;text-align:center;color:yellow;padding-top: 200px;">IN A HURRY? PICK UP A BITE FROM OUR GRAB & GO COUNTER, OPEN WEEKDAYS FROM 11PM!</p>
+		
+		<p style="font-family:courier;font-size:125%;text-align:center;color:yellow;padding-top: 200px;">IN A HURRY? PICK UP A BITE FROM OUR GRAB & GO COUNTER, OPEN WEEKDAYS FROM 11PM!</p>
 	</div>
 
-	<footer class="footerimg" style="background-color: #6FDB29; position: relative; height: 75px; padding: 0px; left: 0px; right: 0px; text-align: center; bottom: 0px;">
-  	<p><a href="##">CONTACT US</a></p>
-  	<p><a href="mailto:pk1999pankaj@gmail.com">
-  	FEEDBACK</a></p>
+	<footer class="footerimg" style=" position: relative; height: 200px; padding: 0px; left: 0px; right: 0px; text-align: center; bottom: 0px;">
+		<ul class="ulaa" style="list-style-type: none;padding-top: 20px;">
+			<li style="float:left;">
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##">	CONTACT US</a><br></p>
+			</li>
+			<li style="float:left;padding-left: 80px;">
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##">CONNECT WITH US</a><br>Facebook<br>Twitter<br>Instagram</p>
+			</li>
+			<li style="float:left;padding-left: 80px;">
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;" href="mailto:pk1999pankaj@gmail.com">FEEDBACK</a></p>
+			</li>
+			<li style="float:left;padding-left: 80px;">
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##">LET US HELP YOU</a><br>Help<br>FAQ's</p>
+			</li>
+		</ul>
 	</footer>
 </body>
 </html>
