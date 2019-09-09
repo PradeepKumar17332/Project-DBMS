@@ -6,42 +6,23 @@
 	<style>
 		p{
 			color: white;
+			font-family: courier;
 		}
-		.container {
-			float: left;
-		}
-		.cot{
-			position: relative;
-			z-index: 10;
-			
-			text-align:center;
-		}
-		.image {
-			display: block
-		}
-
-		.caption {
-			display: block;
-			color: white;
-			width: 100%;
-			text-align: center; //assuming centered captions
-		}
-
+		
+		
 		.headerimg{
 			background: url(/home/pradeep/Documents/miniproject/img/header.png);
 			height: 450px;
 			background-size: cover;
 			background-repeat: no-repeat;
+
 		}
 		.footerimg{
-			background: url(/home/pradeep/Documents/miniproject/img/footer.png);
-			background-color: black;
+			/*background: url(/home/pradeep/Documents/miniproject/img/footer.png);*/
+			background-color: #DAF7A6;
 			height: 150px;
 			background-size: cover;
 			background-repeat: no-repeat;
-		}
-		#cont{
-			position: absolute;
 		}
 		.ulaa{
 			text-align: left;
@@ -49,53 +30,82 @@
 			position:relative;
 			left: 10%;
 		}
+		* {
+			box-sizing: border-box;
+		}
+
+		.column {
+			float: left;
+			width: 25%;
+			padding: 5px;
+		}
+
+		/* Clearfix (clear floats) */
+		.row::after {
+			content: "";
+			clear: both;
+			display: table;
+
+		}
+		.row{
+			padding-top:100px;
+			margin-left: 60px;
+			padding-bottom: 100px;
+			
+		}
+		.column > a >img{
+			height: 200px;
+			width:200px;
+			
+			border-radius: 50%;
+		}
+		.column p{
+			padding-left: 23%;
+		}
 
 	</style>
 </head>
 <body bgcolor='black'>
 	<div class="headerimg">
-		<img src='/home/pradeep/Documents/miniproject/img/logo.jpg' style="margin-left: 50px; width:275px;height:125px;padding-bottom: 75px">
+		<img src='/home/pradeep/Documents/miniproject/img/logo.jpg' style="margin-left: 50px; width:275px;height:125px;">
 	</div>
-	<div id="cont" style="padding-top: 50px;padding-bottom: 100px;position: relative;">
-		<ul style="list-style-type: none;">
-			<li class="container">
-				<img class="image" src='/home/pradeep/Documents/miniproject/img/patties.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px;margin-left: 50px;">
-				<span class="caption" style="font-family:courier;">ITEMS</span>
-			</li>
-			<li class="container">
-				<img  class="image" src='/home/pradeep/Documents/miniproject/img/cart.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-				<span class="caption" style="font-family:courier;">CART</span>
-			</li>
-			<li class="container">
-				<img class="image" src='/home/pradeep/Documents/miniproject/img/wallet.jpeg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-				<span class="caption" style="font-family:courier;">WALLET</span>
-			</li>
-			<li class="container">
-				<img  class="image" src='/home/pradeep/Documents/miniproject/img/order-history.jpg' style="width:200px;height:200px;border-radius: 50%;padding: 30px 30px 30px 30px">
-				<span class="caption" style="font-family:courier;">ORDER-HISTORY</span>
+	
 
-			</li>
-		</ul>
+	<div class="row">
+		<div class="column">
+			<a href="items.html"><img src="/home/pradeep/Documents/miniproject/img/patties.jpg" alt="Items" ></a>
+			<a href="items.html" style="text-decoration: none;font-size:125%;"><p>ITEMS</p></a>
+		</div>
+		<div class="column">
+			<a href="##"><img src="/home/pradeep/Documents/miniproject/img/cart.jpg" alt="cart" ></a>
+			<a href="##.html" style="text-decoration: none;font-size:125%;"><p>CART</p></a>
+		</div>
+		<div class="column">
+			<a href="##"><img src="/home/pradeep/Documents/miniproject/img/wallet.jpeg" alt="wallet" ></a>
+			<a href="##.html" style="text-decoration: none;font-size:125%;"><p>WALLET</p></a>
+		</div>
+		<div class="column">
+			<a href="##"><img src="/home/pradeep/Documents/miniproject/img/order-history.jpg" alt="order-history" ></a>
+			<a href="##" style="text-decoration: none;font-size:125%;"><p>ORDER-HISTORY</p></a>
+		</div>
 	</div>
-
-	<div class="cot" style="padding-top: 80px;padding-bottom: 70px;">
-		
-		<p style="font-family:courier;font-size:125%;text-align:center;color:yellow;padding-top: 200px;">IN A HURRY? PICK UP A BITE FROM OUR GRAB & GO COUNTER, OPEN WEEKDAYS FROM 11PM!</p>
+	<div style="padding-bottom: 100px;">
+		<p style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;font-size:155%;text-align: center;">IN A HURRY? PICK UP A BITE FROM OUR GRAB & GO COUNTER, OPEN WEEKDAYS FROM 8AM!</p>
 	</div>
 
 	<footer class="footerimg" style=" position: relative; height: 200px; padding: 0px; left: 0px; right: 0px; text-align: center; bottom: 0px;">
 		<ul class="ulaa" style="list-style-type: none;padding-top: 20px;">
 			<li style="float:left;">
-				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##">	CONTACT US</a><br></p>
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##">	<b>CONTACT US</b></a><br></p>
 			</li>
 			<li style="float:left;padding-left: 80px;">
-				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##">CONNECT WITH US</a><br>Facebook<br>Twitter<br>Instagram</p>
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##"><b>CONNECT WITH US</b></a><br><i style="color: #FF1414;">Facebook<br>Twitter<br>Instagram</i></p>
 			</li>
 			<li style="float:left;padding-left: 80px;">
-				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;" href="mailto:pk1999pankaj@gmail.com">FEEDBACK</a></p>
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;" href="mailto:pk1999pankaj@gmail.com"><b>FEEDBACK</b></a></p>
 			</li>
 			<li style="float:left;padding-left: 80px;">
-				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##">LET US HELP YOU</a><br>Help<br>FAQ's</p>
+				<p ><a style="color: black;font-family:courier;font-size:125%;text-decoration: none;"href="##"><b>LET US HELP YOU</b></a><br><i style="color: #FF1414;">Help<br>FAQ's</i></p>
 			</li>
 		</ul>
 	</footer>
