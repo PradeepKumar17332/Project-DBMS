@@ -52,42 +52,6 @@
       float: right;
     }
 
-    
-    .add-b{
-
-    }
-    .add-button {
-      border: 0;
-      padding: 15px 10px;
-      background-color: green;
-      color: #fff;
-      font-family: $font-bold;
-      font-size: 12px;
-      border-radius: 3px;
-    }
-    
-    img:hover {
-      -ms-transform: scale(1.1); /* IE 9 */
-      -webkit-transform: scale(1.1); /* Safari 3-8 */
-      transform: scale(1.1); 
-    }
-    .add-button:hover {
-      background-color: #a44;
-    }
-    .place-order-button {
-      border: 0;
-      padding: 25px 40px;
-      background-color: orange;
-      color: #fff;
-      font-family: $font-bold;
-      font-size: 20px;
-      border-radius: 3px;
-
-    }
-    .place-order-button:hover {
-      background-color: #a44;
-
-    }
     th{
       padding-top: 50px;  
       color: white;
@@ -103,27 +67,8 @@
     table{
       width: 100%;
     }
-    .product-quantity {
-      
-      
-    }
-    input {
-        width: 40px;
-
-      }
-    .remove-product {
-      border: 0;
-      padding: 7px 15px;
-      background-color: #c66;
-      color: #fff;
-      font-family: $font-bold;
-      font-size: 12px;
-      border-radius: 3px;
-    }
-
-    .remove-product:hover {
-      background-color: #a44;
-    }
+    
+    
   </style>
 </head>
 
@@ -132,9 +77,9 @@
   <div class="topnav">
     <a href="index.html">Home</a>
     <a  href="items.html">Items</a>
-    <a class="active" href="cart.html">Cart</a>
+    <a  href="cart.html">Cart</a>
     <a href="#wallet">Wallet</a>
-    <a href="order-history.html">Order-History</a>
+    <a class="active" href="order-history.html">Order-History</a>
 
     <a class="myprofile" href="my-profile.html">My Profile</a>
   </div>
@@ -143,31 +88,22 @@
   <div>
     <table>
       <tr>
-        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Product</th>
-        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Product Name</th>
-        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Price</th>
-        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Quantity</th>
-        <th></th>
+        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Date</th>
+        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Time</th>
+        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Order-ID</th>
+        <th style=" text-shadow: 2px 2px 8px #FF0000;color: yellow;font-family:courier;">Total Amount</th>
+        
       </tr>
       <tr>
-        <td><img src="/home/pradeep/Documents/miniproject/img/cream-roll.jpg" height="100" width="100" style="border-radius: 50%;"></td>
-        <td>Cream-roll</td>
+        <td>12/02/2000</td>
+        <td>5:18</td>
+        <td>Order-id</td>
         <td>₹12</td>
-        <td class="product-quantity"><input type="number" value="2" min="1"><td>
-          <td>
-            <button class="remove-product">
-              <b>Remove</b>
-            </button></td>
-          </td>  
-        </tr>
+      </tr>
 
       </table>
     </div>
-    <div style="position: relative;margin-left: 44%;">
-      <button class="place-order-button" >
-        <b>Place Order</b>
-      </button></td>
-    </div>
+    
 
     <footer class="footerimg" style=" position: relative; height: 200px; padding: 0px; left: 0px; right: 0px; text-align: center; bottom: 0px;">
       <ul class="ulaa" style="list-style-type: none;padding-top: 20px;">
