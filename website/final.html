@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="icon" href="img/logo-title.webp" type="image/x-icon">
+	<meta charset="ISO-8859-1">
+	<title>Order Placed</title>
+	<style>
+		body { box-sizing: border-box; 
+			height: 11in; 
+			margin: 0 auto; 
+			overflow: hidden;
+			padding: 0.5in; width: 8.5in;
+		}
+		body {
+			background: #FFF;
+			border-radius: 1px;
+			box-shadow: 0 0 1in -0.25in rgba(0, 0, 0, 0.5);
+		}
+		h1{ 
+			font: bold 100% sans-serif; 
+			letter-spacing: 0.5em;
+			text-align: center;
+			text-transform: uppercase;
+		}
+		h1 {
+			background: #000; 
+			border-radius: 0.25em; 
+			color: #FFF; 
+			margin: 0 0 1em; 
+			padding: 0.5em 0; 
+		}
+		table {
+			font-family: arial, sans-serif;
+			border-collapse: collapse;
+			width: 100%;
+		}
+
+		td, th {
+			border: 1px solid #dddddd;
+			text-align: left;
+			padding: 8px;
+		}
+
+		tr:nth-child(even) {
+			background-color: #dddddd;
+		}
+		table.balance th, table.balance td { width: 25%; }
+		table.balance td { text-align: right; }   
+	</style>
+</head>
+<body>
+	<div align="center">
+		<h1 style="margin-bottom:  50px;">Invoice</h1>
+
+		<table >
+			<tr>
+				<th>Product-Name</th>
+				<th>Rate</th>
+				<th>Quantity</th>
+				<th>Price</th>
+			</tr>
+			<tr>
+				<td>Balaji Simply Salted Potato Chips </td>	 
+				<td>10</td>
+				<td>4</td>
+				<td>40</td>
+			</tr>
+			<tr>
+				<td>Balaji Crunchex Smoked Garlic Potato Chips</td>	 
+				<td>10</td>
+				<td>2</td>
+				<td>20</td>
+			</tr>
+			<tr>
+				<td>Sprite 250ml </td>	 
+				<td>20</td>
+				<td>3</td>
+				<td>60</td>
+			</tr>
+			<tr>
+				<td>Cold Coffee</td>	 
+				<td>20</td>
+				<td>1</td>
+				<td>20</td>
+			</tr>
+		</table>
+		<table class="balance" style="margin-top:50px;">
+			<tr>
+				<th>Total</th>
+				<td>140</td>
+			</tr>
+			<tr>
+				<th>Amount Paid</th>
+				<td>140</td>
+			</tr>
+		</table>
+
+		<h2 style="margin-top: 30px;">Order Placed</h2>
+
+		<br>
+		<a href="index.html" style="text-decoration: none;"><b>Back to shop</b></a>
+	</div>
+</body>
+</html>
